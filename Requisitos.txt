@@ -1,0 +1,19 @@
+Requisitos
+
+Login -> Tela 1
+Cadastrar o pedido -> Tela 2
+Listar os pedidos -> Tela 3
+Pesquisar por CNPJ -> Tela 3
+Atualizar as datas - Tela 4
+Status do pedido - Tela 4
+Relatorios - Tela 5
+Excluir um pedido - Tela 4
+
+
+Git - terminal
+- entra na pasta que esta o projeto
+- git init [enter]
+- git add . [enter]
+- git commit -m "commit inicial" [enter]
+- git config user.email "ozorio.ester@icloud.com" [enter]
+- git config user.name "Ozorio" [enter] - Isso é o nome que vai aparecer para os usuários

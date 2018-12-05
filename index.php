@@ -33,8 +33,53 @@
     <main role="main" class="container">
 
       <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <h1>Últimos Pedidos</h1>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                <div class="input-group mb-3 col">  
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Cliente</span>
+                    </div>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col">
+                    <select class="form-control">
+                        <option>--Selecione o Status--</option>
+                        <option>Finalizado</option>
+                        <option>Cancelado</option>
+                        <option>Emitido</option>
+                    </select>
+                </div>
+                    <div>
+                        <button type="button" class="btn btn-info">Filtrar</button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Num Pedido</th>
+                    <th>Cliente</th>
+                    <th>Data do Pedido</th>
+                    <th>Status </th>
+                    <th>Data da Atualização</th>
+                    <th>Usuario Atualização</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1010</td>
+                    <td>ABC</td>
+                    <td>10/10/2010</td>
+                    <td>Emitido</td>
+                    <td>11/10/2010 12:20:20</td>
+                    <td>Felipe</td>
+                </tr>
+            </tbody>
+        </table>
+        
       </div>
 
     </main><!-- /.container -->
