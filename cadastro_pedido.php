@@ -1,5 +1,6 @@
 <?php
-
+  $msg = (isset($_GET['msg']))? $_GET['msg']:"";
+          
 ?>
 <!DOCTYPE html>
 
@@ -11,7 +12,7 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark static-top">
       <a class="navbar-brand" href="#">Logística</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,9 +37,16 @@
     <main role="main" class="container">
 
       <div class="starter-template">
-        <h1>Cadastrar Pedidos</h1>
-        <form class="form-horizontal">
-<fieldset class="col-6 offset-3">
+        
+        
+        <?php if ($msg != ''): ?>
+        {
+        <div class="alert alert-danger" role="alert">
+            <?php echo $msg; ?>
+        </div>
+        <?php endif; ?>
+        <form class="form-horizontal" action="controller/pedido_cadastrar.php" method="post">
+            <fieldset class="col-6 offset-3">
 
 <!-- Form Name -->
 <legend>Cadastro</legend>
